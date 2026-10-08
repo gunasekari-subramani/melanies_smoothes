@@ -1,6 +1,5 @@
 # Import python packages
 import streamlit as st
-import requests  
 # from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 
@@ -46,6 +45,6 @@ if Ingredient_list:
             st.success(' Your Smoothie is ordered,'+name_on_order+'!', icon="✅")
             st.stop()
       
-
+import requests  
 smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
 st.text(smoothiefroot_response)
